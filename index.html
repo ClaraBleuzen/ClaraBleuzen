@@ -17,6 +17,11 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <script>
+      function showtel(){
+        document.querySelector("#mytel").innerHTML = "01 23 45 67 89";
+      }
+    </script> 
   </head>
   <body>
       <div class="container">
@@ -25,34 +30,36 @@
                <h1>Clara Bleuzen<br/><small>Bootstrap tester, Etudiante EDL et ESSEC</small></h1>
            </div>   
          </div>  
-    <div class="row"> 
-         <div class="col-md-3">
+    <div class ="col-md-3">   
+         <div class="row"> 
              <h3 style="color:red">Profile</h3>
                 <p>Nous tentons désespérement de créer un CV potable</p>
-             <h3>Interests</h3>
+             <h3 style="color:blue">Interests</h3>
                 <p>Cinema, Musées, spectacle vivant</p>
-         </div>    
-         <div class="col-md-9">
-             <h3>Contact</h3>
-                <p>Adresse, Téléphone, Email, Site Web</p>
-         </div>
-         <div class="col-md-9 col-md-offset-3">
-             <h3>Social</h3>
+          </div>  
+   </div>         
+    <div class="col-md-9">
+        <div class="row">
+             <h3 style="color:blueviolet">Contact</h3>
+               <p>Adresse, <span id="mytel" onclick="showtel()">Téléphone</span>, Email, Site Web</p>
+        </div>          
+        <div class="row">
+             <h3 style="color: green" >Social</h3>
                 <p>Facebook</p>
                 <p>LinkedIn</p>
          </div>    
-         <div class="col-md-9 col-md-offset-3">
-             <h3>Education</h3>
-                <p>ESSEC</p>
-                <p>Ecole du Louvre</p>
+         <div class="row">
+             <h3 style="color: yellow">Education</h3>
+                <p>ESSEC Business School (avril - juin 2017)</p>
+                <p>Ecole du Louvre (2013 - 2017)</p>
          </div>
-         <div class="col-md-9 col-md-offset-3">  
-             <h3>Experience</h3>    
-                <p>Cinémathèque Française</p>
-                <p>Galerie Philippe Laeremans</p>
-                <p>Château de Chastellux</p>
+         <div class="row">  
+             <h3 style="color: pink">Experience</h3>    
+                <p>Cinémathèque Française: recherches documentaires (octobre 2016 - juin 2017)</p>
+                <p>Galerie Philippe Laeremans: assistante lors de Parcours des Mondes 2015 et 2016</p>
+                <p>Château de Chastellux: guide-conférence (juillet 2016)</p>
          </div>        
-       </div>  
+    </div>  
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
